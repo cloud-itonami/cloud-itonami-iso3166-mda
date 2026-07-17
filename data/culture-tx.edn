@@ -1,0 +1,14 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "mda.dish.mamaliga", :name "Mămăligă", :country "MDA", :kind :dish, :summary "Dish made out of yellow maize flour, traditional in Romania, Moldova, Hungary, Bulgaria, south-western Ukraine and among Poles in Ukraine.", :url "https://en.wikipedia.org/wiki/M%C4%83m%C4%83lig%C4%83", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mda.dish.placinta", :name "Plăcintă", :country "MDA", :kind :dish, :summary "Romanian and Moldovan traditional pastry resembling a thin, small round or square-shaped cake, usually filled with apples or a soft cheese.", :url "https://en.wikipedia.org/wiki/Pl%C4%83cint%C4%83", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mda.dish.sarmale", :name "Sarmale", :country "MDA", :kind :dish, :summary "Stuffed cabbage rolls popular in all historical regions of Romania and Moldova, including Moldavia, Transylvania and Wallachia.", :url "https://en.wikipedia.org/wiki/Sarmale", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mda.product.moldovan-wine", :name "Moldovan wine", :country "MDA", :kind :product, :summary "Moldova produces approximately 2 million hectolitres of wine annually from 148,500 hectares of vineyards, the 11th largest European wine-producing country with a winemaking tradition spanning thousands of years.", :url "https://en.wikipedia.org/wiki/Moldovan_wine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mda.festival.national-wine-day", :name "National Wine Day", :country "MDA", :kind :festival, :summary "Moldovan observance on 8 October that commemorates the production of Moldovan wine.", :url "https://en.wikipedia.org/wiki/Public_holidays_in_Moldova", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:url "https://en.wikipedia.org/wiki/Orheiul_Vechi", :id "mda.heritage.old-orhei", :kind :heritage, :name-local "Orheiul Vechi", :country "MDA", :retrieved-at "2026-07-17", :summary "Moldovan historical and archaeological complex located in Trebujeni, containing remnants from multiple civilizations spanning from the Paleolithic era through the 16th century.", :name "Old Orhei", :url-provenance :wikipedia-en}
+#:culture{:id "mda.heritage.cricova", :name "Cricova wine cellars", :country "MDA", :kind :heritage, :summary "Town in Moldova best known for its vast underground wine cellars, among the largest in the world, making Cricova one of Moldova's leading tourist destinations.", :url "https://en.wikipedia.org/wiki/Cricova", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
