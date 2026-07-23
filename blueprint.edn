@@ -3,7 +3,11 @@
  :itonami.blueprint/iso3166 "MDA"
  :itonami.blueprint/domain :public-sector/market-entry-compliance
  :itonami.blueprint/license "AGPL-3.0-or-later"
+ :itonami.blueprint/social-impact [:sme-market-access :public-spend-transparency :cross-border-friction-reduction]
  :itonami.blueprint/governor :market-entry-compliance-governor
  :itonami.blueprint/robotics false
  :itonami.blueprint/required-technologies [:identity :forms :dmn :bpmn :audit-ledger]
- :itonami.blueprint/status :public-oss}
+ :itonami.blueprint/status :public-oss
+ :itonami.blueprint/maturity :implemented
+ :itonami.blueprint/implemented-slice
+ "Full Actors-pattern implementation: MarketEntry-LLM advisor (marketentry.marketentryllm) sealed behind an independent Market-Entry Compliance Governor (marketentry.governor, interdiction-list-listed flagship check -- independently recomputes Lista de interdicţie a operatorilor economici (List of Interdiction of Economic Operators, Legea nr. 131/2015 + Hotărârea Guvernului nr. 1418 din 28.12.2016) membership rather than trusting a proposal's own self-report, plus spec-basis / evidence-incomplete / engagement-fee-mismatch / idno-unverified / already-drafted / already-submitted) driving a langgraph-clj StateGraph (marketentry.operation) over an append-only audit ledger; MemStore + langchain-store-backed DatomicStore (marketentry.store, built on io.github.kotoba-lang/langchain-store per ADR-2607141600, not a hand-rolled enc/dec* codec); marketentry.facts grounded in a verified Moldova dossier (MTender/achizitii.md electronic public-procurement system, Legea nr. 131/2015, Agenția Servicii Publice + IDNO); governor contract + store parity + registry + phase + facts tests all passing (clojure -M:dev:test); 0 clj-kondo errors (clojure -M:lint); CI (.github/workflows/ci.yml) reconstructs the kotoba-lang/langgraph+langchain+langchain-store sibling-checkout layout."}
