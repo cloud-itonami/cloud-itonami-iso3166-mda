@@ -66,8 +66,8 @@ citation).
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD check | `interdiction-list-listed` (Legea nr. 131/2015 + Hotărârea Guvernului nr. 1418 din 28.12.2016, an unconditional registry-membership check independently re-verified -- see `docs/adr/0001-architecture.md`) |
 | Compliance catalog | `src/statute/facts.cljk` -- Labour Code, Fiscal Code, Law on Investments in Entrepreneurial Activity |
-| Tests | `clojure -M:dev:test` |
-| Demo | `clojure -M:dev:run` |
+| Tests | `kbb -M:dev:test` |
+| Demo | `kbb -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
 
 `:filing/submit` is never in any phase's `:auto` set -- human sign-off
