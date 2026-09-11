@@ -51,8 +51,8 @@ and via Wayback Machine snapshots, which only captured the page's JS
 loading shell) -- per this fleet's hard rule against bypassing bot
 detection, it was NOT bypassed. Every citation in this repo instead
 comes from a DIFFERENT official government body's own directly-
-readable page or document -- see `src/marketentry/facts.cljc` and
-`src/statute/facts.cljc` for the full per-citation discussion,
+readable page or document -- see `src/marketentry/facts.cljk` and
+`src/statute/facts.cljk` for the full per-citation discussion,
 including the honest gaps this iteration could NOT independently
 confirm (a representative-mandate provision, and the company/LLC-law
 citation).
@@ -65,7 +65,7 @@ citation).
 | Governor | `:market-entry-compliance-governor` |
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD check | `interdiction-list-listed` (Legea nr. 131/2015 + Hotărârea Guvernului nr. 1418 din 28.12.2016, an unconditional registry-membership check independently re-verified -- see `docs/adr/0001-architecture.md`) |
-| Compliance catalog | `src/statute/facts.cljc` -- Labour Code, Fiscal Code, Law on Investments in Entrepreneurial Activity |
+| Compliance catalog | `src/statute/facts.cljk` -- Labour Code, Fiscal Code, Law on Investments in Entrepreneurial Activity |
 | Tests | `clojure -M:dev:test` |
 | Demo | `clojure -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
@@ -135,7 +135,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for Moldova:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.cljk` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
