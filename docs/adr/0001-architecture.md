@@ -16,7 +16,7 @@ Eastern-European/post-Soviet siblings that already carry the full
 implementation: `cloud-itonami-iso3166-arm` (Armenia),
 `cloud-itonami-iso3166-aze` (Azerbaijan) and `cloud-itonami-iso3166-kgz`
 (Kyrgyzstan) -- all read in full (`src/marketentry/*.cljc`,
-`src/statute/facts.cljc`, `test/`, `deps.edn`, README/CONTRIBUTING/
+`src/statute/facts.cljk`, `test/`, `deps.edn`, README/CONTRIBUTING/
 GOVERNANCE, docs) before writing anything here.
 
 ## Decision
